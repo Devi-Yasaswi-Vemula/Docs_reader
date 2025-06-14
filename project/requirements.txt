@@ -1,19 +1,25 @@
-langchain
-langchain-openai
+# LangChain core and community
+langchain>=0.1.14
 langchain-core
+langchain-openai
 langchain_community
-docx2txt
-pypdf
 langchain_chroma
-python-multipart
-fastapi
-uvicorn
-streamlit
-easyocr
+
+# Document loaders and parsing
+docx2txt>=0.8
+pypdf
+unstructured[html]>=0.11.0
+
+# OCR and image processing
 easyocr
 pdf2image>=1.16.3
 Pillow>=10.3.0
-langchain>=0.1.14
-docx2txt>=0.8
-unstructured[html]>=0.11.0
-pytesseract
+
+# Web frameworks
+fastapi
+uvicorn
+python-multipart
+streamlit
+
+# Environment variables
+python-dotenv
